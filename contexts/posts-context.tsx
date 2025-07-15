@@ -1,11 +1,16 @@
 import React, { createContext, ReactNode, useContext } from "react";
 
 export type Post = {
-  //IMPLEMENT
+  //IMPLEMENT POST TYPE
+};
+
+export type Comment = {
+  //IMPLEMENT COMMENT TYPE
 };
 
 type PostsContextType = {
   posts: Post[];
+  favorites: Post[];
   setPosts: React.Dispatch<React.SetStateAction<Post[]>>;
   toggleFavorite: (id: string) => void;
 };
